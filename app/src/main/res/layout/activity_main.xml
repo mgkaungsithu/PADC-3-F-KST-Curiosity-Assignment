@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.kaungsithu.curiosity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Curiosity"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@drawable/bg">
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_fb"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/image_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/facebook"
+            />
+
+        <ImageButton
+            android:id="@+id/bt_gl"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bt_fb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/google" />
+
+
+        <ImageButton
+            android:id="@+id/bt_tw"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bt_gl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/twitter" />
+
+        <ImageButton
+            android:id="@+id/bt_email1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/bt_tw"
+            android:layout_below="@+id/bt_tw"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/em" />
+
+        <ImageButton
+            android:id="@+id/bt_email2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/bt_tw"
+            android:layout_alignTop="@+id/bt_email1"
+            android:src="@drawable/em" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Terms and Conditionsand Privary_Ploicy " />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
